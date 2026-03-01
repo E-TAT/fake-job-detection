@@ -78,10 +78,4 @@ The system prioritizes detecting fraudulent postings to minimize missed scams.
 
 ---
 
-## 🚀 How to Run Locally
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
