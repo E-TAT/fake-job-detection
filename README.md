@@ -119,7 +119,7 @@ The objective of this project is to build an intelligent system that can automat
 
 The system follows the workflow shown below:
 
-![System Architecture](screenshots/system_architecture.png)
+![System Architecture](screenshots/system_architecture.jpg)
 
 ### Architecture Flow
 
@@ -217,7 +217,7 @@ This enables:
 
 ## Final SVM Results
 
-![SVM Results](screenshots/svm_results.png)
+![SVM Results](screenshots/svm_results.jpg)
 
 ### Performance Metrics
 
@@ -234,7 +234,7 @@ The model was optimized to prioritize the detection of fraudulent job postings w
 
 ## Random Forest Comparison
 
-![Random Forest Results](screenshots/random_forest_results.png)
+![Random Forest Results](screenshots/random_forest_results.jpg)
 
 A Random Forest model was also tested during experimentation.
 
@@ -246,7 +246,7 @@ The SVM model was selected because it provided better fraud detection performanc
 
 ## Dataset Distribution
 
-![Dataset Distribution](screenshots/dataset_distribution.png)
+![Dataset Distribution](screenshots/dataset_distribution.jpg)
 
 The dataset is highly imbalanced:
 
@@ -261,7 +261,7 @@ Balanced Class Weights were applied to address this issue.
 
 ## Home Page
 
-![Home Page](screenshots/home_page.png)
+![Home Page](screenshots/home_page.jpg)
 
 Users can enter any job description for analysis.
 
@@ -269,7 +269,7 @@ Users can enter any job description for analysis.
 
 ## Fake Job Detection Example
 
-![Fake Job Detection](screenshots/fake_job_detection.png)
+![Fake Job Detection](screenshots/fake_job_detection.jpg)
 
 Example of a fraudulent job posting detected by the system.
 
@@ -283,7 +283,7 @@ Features shown:
 
 ## Real Job Detection Example
 
-![Real Job Detection](screenshots/real_job_detection.png)
+![Real Job Detection](screenshots/real_job_detection.jpg)
 
 Example of a legitimate job posting.
 
@@ -296,7 +296,7 @@ Features shown:
 
 ## Model Summary Page
 
-![Model Summary](screenshots/model_summary_page.png)
+![Model Summary](screenshots/model_summary_page.jpg)
 
 Displays:
 
@@ -310,7 +310,7 @@ Displays:
 
 ## Use Case Diagram
 
-![Use Case Diagram](screenshots/use_case_diagram.png)
+![Use Case Diagram](screenshots/use_case_diagram.jpg)
 
 Illustrates interactions between users, administrators, and the system.
 
@@ -318,7 +318,7 @@ Illustrates interactions between users, administrators, and the system.
 
 ## Activity Diagram
 
-![Activity Diagram](screenshots/activity_diagram.png)
+![Activity Diagram](screenshots/activity_diagram.jpg)
 
 Shows the complete workflow from user input to prediction output.
 
@@ -326,7 +326,7 @@ Shows the complete workflow from user input to prediction output.
 
 ## Data Flow Diagram
 
-![Data Flow Diagram](screenshots/data_flow_diagram.png)
+![Data Flow Diagram](screenshots/data_flow_diagram.jpg)
 
 Represents the movement of information between the user, application, and machine learning model.
 
@@ -334,7 +334,7 @@ Represents the movement of information between the user, application, and machin
 
 ## Context Level DFD
 
-![Context Level DFD](screenshots/context_level_dfd.png)
+![Context Level DFD](screenshots/context_level_dfd.jpg)
 
 Provides a high-level overview of system interactions.
 
@@ -342,7 +342,7 @@ Provides a high-level overview of system interactions.
 
 ## Workflow Diagram
 
-![Workflow Diagram](screenshots/workflow_diagram.png)
+![Workflow Diagram](screenshots/workflow_diagram.jpg)
 
 Illustrates the machine learning pipeline from preprocessing to prediction.
 
@@ -416,19 +416,19 @@ http://localhost:8501
 fake-job-detection/
 │
 ├── screenshots/
-│   ├── home_page.png
-│   ├── fake_job_detection.png
-│   ├── real_job_detection.png
-│   ├── model_summary_page.png
-│   ├── dataset_distribution.png
-│   ├── svm_results.png
-│   ├── random_forest_results.png
-│   ├── use_case_diagram.png
-│   ├── activity_diagram.png
-│   ├── data_flow_diagram.png
-│   ├── context_level_dfd.png
-│   ├── system_architecture.png
-│   └── workflow_diagram.png
+│   ├── home_page.jpg
+│   ├── fake_job_detection.jpg
+│   ├── real_job_detection.jpg
+│   ├── model_summary_page.jpg
+│   ├── dataset_distribution.jpg
+│   ├── svm_results.jpg
+│   ├── random_forest_results.jpg
+│   ├── use_case_diagram.jpg
+│   ├── activity_diagram.jpg
+│   ├── data_flow_diagram.jpg
+│   ├── context_level_dfd.jpg
+│   ├── system_architecture.jpg
+│   └── workflow_diagram.jpg
 │
 ├── app.py
 ├── requirements.txt
