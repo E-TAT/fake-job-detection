@@ -1,81 +1,108 @@
-# 🛡️ Fake Job Listing Detection System
+# 📸 Application Screenshots
 
-A Machine Learning-based web application that detects whether a job posting is **Real** or **Fraudulent** using Natural Language Processing (NLP) techniques.
+## Home Page
 
-This project was developed as a Mini Project for B.Tech Computer Science Engineering (Data Science).
+![Home Page](screenshots/home_page.png)
 
----
-
-## 📌 Project Overview
-
-Online job platforms are increasingly targeted by fraudulent job postings.  
-This system uses text analysis and machine learning to automatically classify job descriptions as:
-
-- ✅ Real Job
-- 🚨 Fake Job
-
-The model analyzes the job description content and provides a probability-based prediction.
+The main interface where users can enter a job description and initiate fraud analysis.
 
 ---
 
-## ⚙️ Technologies Used
+## Fake Job Detection Example
 
-- Python
-- Streamlit (Web UI)
-- Scikit-learn
-- TF-IDF Vectorization
-- Support Vector Machine (LinearSVC)
-- NumPy & SciPy
+![Fake Job Detection](screenshots/fake_job_detection.png)
+
+Example showing detection of a fraudulent job posting with fraud probability score.
 
 ---
 
-## 🧠 Machine Learning Approach
+## Real Job Detection Example
 
-### 1️⃣ Data Preprocessing
-- Lowercasing text
-- Removing HTML tags
-- Removing special characters
-- Whitespace normalization
+![Real Job Detection](screenshots/real_job_detection.png)
 
-### 2️⃣ Feature Engineering
-- TF-IDF Vectorization
-- Unigrams + Bigrams (`ngram_range=(1,2)`)
-- Maximum 8000 features
-- Minimum document frequency filtering
-
-### 3️⃣ Model Training
-- Algorithm: **Support Vector Machine (LinearSVC)**
-- Class imbalance handled using `class_weight='balanced'`
-- 80-20 Train-Test split with stratification
-
-### 4️⃣ Data Augmentation
-To improve detection of modern scam patterns (crypto scams, security deposits, wallet activation fraud), synthetic fraudulent samples were added to the dataset.
-
-### 5️⃣ Threshold Tuning
-A custom fraud detection threshold (55%) was applied to improve sensitivity toward fake job postings.
+Example showing detection of a legitimate job posting with confidence score.
 
 ---
 
-## 📊 Model Performance
+## Model Summary Page
 
-- **Accuracy:** ~97.7%
-- **Fake Job Recall:** 83%
-- **Fake Job Precision:** 76%
-- Balanced detection with reduced false negatives
+![Model Summary](screenshots/model_summary_page.png)
 
-The system prioritizes detecting fraudulent postings to minimize missed scams.
+Displays model configuration, dataset information, and performance details.
 
 ---
 
-## 🌐 Web Application Features
+# 📊 Dataset Analysis
 
-- Clean Streamlit-based UI
-- Sidebar navigation (Detection + Model Summary)
-- Probability-based prediction
-- Adjustable fraud sensitivity
-- Animated feedback (GIF indicators)
-- Confidence score display
+## Dataset Distribution
+
+![Dataset Distribution](screenshots/dataset_distribution.png)
+
+Visualization showing the imbalance between real and fraudulent job postings in the dataset.
 
 ---
 
+# 🤖 Model Evaluation
 
+## SVM Performance
+
+![SVM Results](screenshots/svm_results.png)
+
+Performance metrics of the final Support Vector Machine model used in the application.
+
+### Results
+- Accuracy: ~97.7%
+- Fake Job Recall: ~83%
+- Fake Job Precision: ~76%
+
+---
+
+## Random Forest Comparison
+
+![Random Forest Results](screenshots/random_forest_results.png)
+
+Comparison model used during experimentation and model selection.
+
+The SVM model was selected because it achieved better fraud detection performance while maintaining high overall accuracy.
+
+---
+
+# 🏗️ System Design
+
+## Use Case Diagram
+
+![Use Case Diagram](screenshots/use_case_diagram.png)
+
+Shows interactions between users, administrators, and the Fake Job Detection System.
+
+---
+
+## Activity Diagram
+
+![Activity Diagram](screenshots/activity_diagram.png)
+
+Illustrates the complete workflow from user input to final prediction output.
+
+---
+
+## Data Flow Diagram
+
+![Data Flow Diagram](screenshots/data_flow_diagram.png)
+
+Represents the movement of data between users, the application, and the trained machine learning model.
+
+---
+
+## System Architecture
+
+![System Architecture](screenshots/system_architecture.png)
+
+High-level architecture showing preprocessing, TF-IDF vectorization, SVM classification, probability calculation, and result generation.
+
+---
+
+## Workflow Diagram
+
+![Workflow Diagram](screenshots/workflow_diagram.png)
+
+Detailed machine learning pipeline from dataset preprocessing to final prediction.
