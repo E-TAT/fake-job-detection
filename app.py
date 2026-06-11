@@ -3,7 +3,6 @@ import joblib
 import re
 import numpy as np
 from scipy.special import expit  # Sigmoid function
-import time
 
 # Page config
 st.set_page_config(
@@ -57,7 +56,6 @@ if page == "🔍 Detection System":
         if job_description.strip() == "":
             st.warning("⚠ Please enter a job description before analyzing.")
         else:
-            start_time = time.time() 
             with st.spinner("Analyzing job posting..."):
                 
                 cleaned_input = clean_text(job_description)
@@ -70,11 +68,6 @@ if page == "🔍 Detection System":
                 decision_score = model.decision_function(vectorized_input)[0]
                 # Convert to fake_probability using sigmoid
                 fake_probability = expit(decision_score)
-
-                end_time = time.time()     
-                latency = end_time - start_time
-
-                st.metric("Response Time (sec)", f"{latency:.4f}")
 
                 # Custom threshold (more strict) 
                 if fake_probability >= 0.55: #55% Threshold
